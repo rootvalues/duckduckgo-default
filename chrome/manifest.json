@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "DuckDuckGo - Default Search Engine",
+	"version": "2018.6.6",
+	"description": "Set DuckDuckGo as the default search engine.",
+
+	"icons": {
+		"16": "icons/icon_16.png",
+		"48": "icons/icon_48.png",
+		"128": "icons/icon_128.png"
+	},
+	"browser_action": {
+	    "default_icon": {
+		"19": "icons/icon_19.png",
+		"38": "icons/icon_38.png"
+		}
+	},
+	"omnibox": {"keyword": "d"},
+
+	"chrome_settings_overrides": {
+		"search_provider": {
+			"encoding": "UTF-8",
+			"name": "DuckDuckGo",
+			"search_url": "https://duckduckgo.com/?q={searchTerms}",
+			"keyword": "duckduckgo.com",
+			"favicon_url": "https://duckduckgo.com/favicon.ico",
+			"suggest_url": "https://duckduckgo.com/ac/?q={searchTerms}&type=list",
+			"is_default": true
+		  }
+	}
+}
